@@ -133,6 +133,46 @@ https://github.com/datajerk/ctf-write-ups/blob/master/INDEX.md
 similiar : https://github.com/datajerk/ctf-write-ups/tree/master/darkctf2020/roprop 
            
    https://github.com/datajerk/ctf-write-ups/tree/master/downunderctf2020/return_to_what
+   
+# ***REVERSE ENGINEERING***
+
+## ***JUST IN TIME***
+
+This will give the flag.
+
+***```ltrace -s 90 ./justintime````***
+```
+malloc(8)                                        = 0x5631a2b6e2a0
+malloc(8)                                        = 0x5631a2b6e2c0
+fopen(&quot;./justintime&quot;, &quot;rb&quot;)                      = 0x5631a2b6e2e0
+fread(0x5631a2b6e2c0, 8, 1, 0x5631a2b6e2e0)      = 1
+fclose(0x5631a2b6e2e0)                           = 0
+strncpy(0x5631a2b6e2a0, &quot;\177ELF\002\001\001&quot;, 8) = 0x5631a2b6e2a0
+malloc(39)                                       = 0x5631a2b6e4c0
+strncpy(0x5631a2b6e4c0, &quot;\033&amp;8 yegHr($g1bKu{&quot;f5`N}t#331Nv/%`11F#1&quot;, 39) = 0x5631a2b6e4c0
+strlen(&quot;\033&amp;8 yegHr($g1bKu{&quot;f5`N}t#331Nv/%`11F#1&quot;) = 38
+puts(&quot;Decryption finished.&quot;Decryption finished.
+)                     = 21
+malloc(39)                                       = 0x5631a2b6e900
+malloc(40)                                       = 0x5631a2b6e930
+strncpy(0x5631a2b6e900, &quot;dctf{df77dbe0c407dd4a188e12013ccb009f}&quot;, 39) = 0x5631a2b6e900
+malloc(40)                                       = 0x5631a2b6e960
+strlen(&quot;\033&amp;8 yegHr($g1bKu{&quot;f5`N}t#331Nv/%`11F#1&quot;) = 38
+free(0x5631a2b6e4c0)                             = &lt;void&gt;
+free(0x5631a2b6e960)                             = &lt;void&gt;
+free(0x5631a2b6e2a0)                             = &lt;void&gt;
++++ exited (status 0) +++
+```
+
+FLAG : ***``dctf{df77dbe0c407dd4a188e12013ccb009f}``***
+
+## ***TINY INTERPRETER***
+
+We are given to files one interprter file and bin file.
+
+If we run **``./interpreter``** bin we get the flag.
+
+FLAG : ***``dctf{Interpreter_written_in_C_is_a_great_idea}``***
 
 # ***CRYPTO***
 
@@ -153,3 +193,51 @@ print(real_cipher)
 ```
 
 FLAG : ***```dctf{Th1s_l00ks_4_lot_sm4ll3r_th4n_1t_d1d}```***
+
+## ***STRONG PASSWORD***
+
+WE can crack the password using *`JOHN THE RIPPER`*
+
+***```zip2john strong_password.zip > zip.hash```***
+
+***```john --wordlist=rockyou.txt zip.hash```***
+
+We get the password as **``Bo38AkRcE600X8DbK3600``**
+
+In the lorem.txt we find the flag by ``cat lorem.txt | grep dctf``
+
+Flag: ***```dctf{r0cKyoU_f0r_tHe_w1n}```***
+
+## ***Julius' ancient script***
+
+We are given a flag.txt 
+
+We can get the flag by decoding as ceaser cipher 
+
+FLAG : ***```dcTf{Th3_d13_h4S_b33N_c4ST}```***
+
+## ***FORGOTTEN SECRET***
+
+For this challenge you were given a docker image and a hint that it doesn't follow best practices. To get the files from the image, you just need to untar it:
+```
+tar xf image
+for f in `ls */layer.tar`; do tar xf $f; done
+This leaves us with 3 files of interest among the extracted files: 7dabd7d32d701c6380d8e9f053d83d050569b063fbcf7ebc65e69404bed867a5.json, root/.ssh/id_rsa and home/alice/cipher.bin. After viewing the SSH private key in id_rsa and the ciphertext in cipher.bin, I had a look in 7dabd7d32d701c6380d8e9f053d83d050569b063fbcf7ebc65e69404bed867a5.json. In this file, everything is normal except for a leaked environment variable, SECRET_KEY. But how can this help us?
+```
+
+So, after trying to open id_rsa in the python interpreter, we get an invalid key format error. So, that must mean that id_rsa is encrypted. But with which key? Luckily we have SECRET_KEY from before.
+```py
+from Crypto.PublicKey import RSA
+from Crypto.Util.number import bytes_to_long, long_to_bytes
+
+SECRET_KEY = '58703273357638792F423F4528482B4D6251655468566D597133743677397A24'
+f_key = open('root/.ssh/id_rsa')
+f_ct = open('home/alice/cipher.bin', 'rb')
+key_txt = f_key.read()
+ct = f_ct.read()
+
+key = RSA.import_key(key_txt, passphrase=SECRET_KEY)
+pt = long_to_bytes(pow(bytes_to_long(ct), key.d, key.n))
+print(pt)
+```
+As there were only three files of interest, is was obvious that cipher.bin would be what needs decryption. After unlocking the SSH private key id_rsa, I just converted the ciphertext to an integer, and manually decrypted it with c^d mod n.
