@@ -126,6 +126,6 @@ p.sendlineafter('me\n',payload)
 p.recvuntil('work\n')
 p.interactive()
 ```
-here[https://github.com/datajerk/ctf-write-ups/blob/master/INDEX.md ]
+#here[https://github.com/datajerk/ctf-write-ups/blob/master/INDEX.md ]
 
 similiar : https://github.com/datajerk/ctf-write-ups/tree/master/darkctf2020/roprop https://github.com/datajerk/ctf-write-ups/tree/master/downunderctf2020/return_to_what
