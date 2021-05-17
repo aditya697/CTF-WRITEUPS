@@ -17,3 +17,5 @@ OSINT , WEB - https://github.com/BaadMaro/CTF
 MISC - https://nikolabura.github.io/blog/post/umdctf-2021-writeups/
 
 PWN - https://github.com/csivitu/CTF-Write-ups
+
+USERNAMES - https://github.com/sherlock-project/sherlock
