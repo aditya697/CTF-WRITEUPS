@@ -25,7 +25,7 @@ payload += p64(binary.sym.win)
 p.sendlineafter('joke\n',payload)
 p.interactive()
 ```
-FLAG: ``dctf{Ju5t_m0v3_0n}``
+FLAG: ***``dctf{Ju5t_m0v3_0n}``***
 
 # ***PINCH_ME***
 
@@ -46,7 +46,7 @@ payload += p64(0x1337c0de)
 p.sendlineafter('?\n',payload)
 p.interactive()
 ```
-FLAG : ``dctf{y0u_kn0w_wh4t_15_h4pp3n1ng_b75?}``
+FLAG : `***`dctf{y0u_kn0w_wh4t_15_h4pp3n1ng_b75?}``***
 
 # ***README***
 
@@ -74,4 +74,4 @@ rev: stdin: Invalid or incomplete multibyte or wide character
 ```
 By guessing the last letters as `0k5`.
 
-FLAG : ```dctf{n0w_g0_r3ad_s0me_b00k5}```
+FLAG : ***```dctf{n0w_g0_r3ad_s0me_b00k5}```***
