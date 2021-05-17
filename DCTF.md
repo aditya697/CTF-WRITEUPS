@@ -468,3 +468,47 @@ We are given a pdf file if we put that file in cyberchef and do hex decoding we 
 ![image](https://user-images.githubusercontent.com/73250884/118491967-26fdfe00-b73d-11eb-8535-f2646a9fc412.png)
 
 Flag : ***```dctf{3b0ba4}```***
+
+## ***Bad Apple***
+
+I downloaded the file and opened and heard some weird sound in the middle. So extracted audio and analysed in sonic vision and added A spectrogram was used to find a QR code.
+
+![image](https://user-images.githubusercontent.com/78896740/118483703-f82f5a00-b733-11eb-9b1e-d2d4637ca63e.png)
+
+![image](https://user-images.githubusercontent.com/78896740/118483934-43e20380-b734-11eb-9114-c45f4a2af5c6.png)
+
+converted into black and white and scanned QR code and got the flag.
+
+Flag : ***```dctf{sp3tr0gr4msAreCo0l}```***
+
+## ***Extraterrestrial Communication***
+
+As the chall said the audio might be SSTV.
+
+So i used QSSTV initially but it didn't work well do i shifted to Robot36.
+
+There is an app in playstore for Robot36 :https://play.google.com/store/apps/details?id=xdsopl.robot36&hl=en_IN&gl=US.
+I played the audio given and got an image.
+
+![image](https://user-images.githubusercontent.com/78896740/118482031-d339e780-b731-11eb-94a0-02d6103c4345.png)
+
+it's not so clear so tried again and ended up with
+
+![image](https://user-images.githubusercontent.com/78896740/118482075-e2209a00-b731-11eb-96ef-1f067d808b7e.png)
+
+Flag : ***```dctf{what_ev3n_1s_SSTV}```***
+
+## ***Powerpoint programming***
+
+Initially i tried to open oit directly but the complete screec looks like some lockscreen page where there is keys and if we type the flag it gives correct or not.
+So next thing I did is to open the file in the PowerPoint. And it looks good now because now the screen isn't locked it like a editable ppsx.
+
+![image](https://user-images.githubusercontent.com/78896740/118482768-d1245880-b732-11eb-8dc6-ede9653434c4.png)
+
+And now I opened the Animation plane to see the exact animation where we get the slide correct. In Animation there are many triggers and all dores the same job.(triggres after 86)
+
+![image](https://user-images.githubusercontent.com/78896740/118482931-0761d800-b733-11eb-8be1-cf90f5666645.png)
+
+And I started pressing them manually and noted the flag.
+
+ Flag : ***```DCTF {PPT_1SNT_V3RY_S3CUR3_1S_1T}```***
