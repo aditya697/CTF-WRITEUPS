@@ -208,7 +208,7 @@ In the lorem.txt we find the flag by ``cat lorem.txt | grep dctf``
 
 Flag: ***```dctf{r0cKyoU_f0r_tHe_w1n}```***
 
-## ***Julius' ancient script***
+## ***JULIUS ANCIENT SCRIPT***
 
 We are given a flag.txt 
 
@@ -241,3 +241,26 @@ pt = long_to_bytes(pow(bytes_to_long(ct), key.d, key.n))
 print(pt)
 ```
 As there were only three files of interest, is was obvious that cipher.bin would be what needs decryption. After unlocking the SSH private key id_rsa, I just converted the ciphertext to an integer, and manually decrypted it with c^d mod n.
+
+## ***SCOOVY-DOO***
+
+```c
+a="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+
+for i in {1..22}
+do
+s=$(cat cipher.txt | cut -b "$i" | tr -d '\n')
+  for x in {0..25}
+  do
+      c=${a:$x:1}
+      if [[ $s == *"$c"* ]]
+      then
+          printf ''
+      else
+          printf ${a:$x:1}
+      fi
+   done
+done
+```
+
+FLAG : ***```DCTFTURINGWOULDBEPROUD```***
