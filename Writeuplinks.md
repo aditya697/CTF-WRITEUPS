@@ -3,3 +3,9 @@ CRYPTO , REV - https://wrecktheline.com/writeups/
 Good for PWN - https://github.com/datajerk/ctf-write-ups/blob/master/INDEX.md
 
 OSINT - https://github.com/sociallyencrypted/SDCTF2021-Writeups
+
+angstromctf - 
+
+walkthroughs for first 4 pwn challs: https://www.youtube.com/watch?v=2pqG6opzrug
+walkthroughs for first 2 reverse challs: https://www.youtube.com/watch?v=MhkVkOpj5OI
+walkthroughs for first 4 web challs: https://www.youtube.com/watch?v=c147fBCppb8(edited)
