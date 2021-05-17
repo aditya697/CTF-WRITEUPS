@@ -86,7 +86,7 @@ print(p.recvuntil('}').decode())
 
 FLAG : ***```dctf{1_L1k3_M4G1c}```***
 
-# ***BABY_BOF***
+## ***BABY_BOF***
 
 ```py
 from pwn import *
@@ -133,3 +133,23 @@ https://github.com/datajerk/ctf-write-ups/blob/master/INDEX.md
 similiar : https://github.com/datajerk/ctf-write-ups/tree/master/darkctf2020/roprop 
            
    https://github.com/datajerk/ctf-write-ups/tree/master/downunderctf2020/return_to_what
+
+# ***CRYPTO***
+
+## ***THIS ONE IS REALLY BASIC***
+
+```py
+import base64
+cipher = ""
+with open('cipher.txt', 'r') as f:
+    cipher = f.readlines()
+
+real_cipher = cipher[0].strip()
+
+for i in range(42):
+    real_cipher = base64.b64decode(real_cipher).decode()
+
+print(real_cipher)
+```
+
+FLAG : ***```dctf{Th1s_l00ks_4_lot_sm4ll3r_th4n_1t_d1d}```***
