@@ -67,3 +67,11 @@ for((p=8;p<14;p++)) {
 
 This bash script will echo %8$p, then echo %9$p, etc... into the challenge service serially (one by one), capturing the output (grep, awk), converting to text (xxd), and then finally reversing the string (rev, since x86_64 is little endian).
 
+```
+dctf{n0w_g0_r3ad_s0me_b0rev: stdin: Invalid or incomplete multibyte or wide character
+rev: stdin: Invalid or incomplete multibyte or wide character
+rev: stdin: Invalid or incomplete multibyte or wide character
+```
+By guessing the last letters as `0k5`.
+
+FLAG : ```dctf{n0w_g0_r3ad_s0me_b00k5}```
