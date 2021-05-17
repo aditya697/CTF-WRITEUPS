@@ -13,8 +13,6 @@ from Crypto.Util.number import bytes_to_long, isPrime
 from Crypto.PublicKey import RSA
 from base64 import b64decode
 
-
-# Partial private key received from image
 upper_key = b"""
 MIIJKQIBAAKCAgEAupQ7hhy0AQR0LRMZgP/Kl6J3l2+U+wp1YyVB8oDYvslE3AXU
 3igwX2LOYgG/JIHQ5UI2G/0Fu5iPPikh3JoUABGFyPwWsBLnohdBBtpvfRLprhbB
