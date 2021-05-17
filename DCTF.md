@@ -1,6 +1,6 @@
 # ***PWN_SANITY_CHECK***
 
-```
+```py
 from pwn import *
 
 binary = context.binary = ELF('./pwn_sanity_check')
