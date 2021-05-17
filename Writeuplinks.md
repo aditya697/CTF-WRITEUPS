@@ -13,3 +13,6 @@ walkthroughs for first 2 reverse challs: https://www.youtube.com/watch?v=MhkVkOp
 walkthroughs for first 4 web challs: https://www.youtube.com/watch?v=c147fBCppb8(edited)
 
 OSINT , WEB - https://github.com/BaadMaro/CTF 
+
+MISC - https://nikolabura.github.io/blog/post/umdctf-2021-writeups/
+
