@@ -273,7 +273,7 @@ print(pt)
 ```
 As there were only three files of interest, is was obvious that cipher.bin would be what needs decryption. After unlocking the SSH private key id_rsa, I just converted the ciphertext to an integer, and manually decrypted it with c^d mod n.
 
-## ***SCOOVY-DOO***
+## ***SCOOBY-DOO***
 
 ```c
 a="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
