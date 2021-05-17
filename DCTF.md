@@ -23,7 +23,7 @@ payload += p64(binary.sym.win)
 p.sendlineafter('joke\n',payload)
 p.interactive()
 ```
-FLAG: ***``dctf{Ju5t_m0v3_0n}``***
+Flag: ***``dctf{Ju5t_m0v3_0n}``***
 
 ## ***PINCH_ME***
 
@@ -40,7 +40,7 @@ payload += p64(0x1337c0de)
 p.sendlineafter('?\n',payload)
 p.interactive()
 ```
-FLAG : ``***dctf{y0u_kn0w_wh4t_15_h4pp3n1ng_b75?}``***
+Flag : ``***dctf{y0u_kn0w_wh4t_15_h4pp3n1ng_b75?}``***
 
 ## ***README***
 
@@ -68,7 +68,7 @@ rev: stdin: Invalid or incomplete multibyte or wide character
 ```
 By guessing the last letters as `0k5`.
 
-FLAG : ***```dctf{n0w_g0_r3ad_s0me_b00k5}```***
+Flag : ***```dctf{n0w_g0_r3ad_s0me_b00k5}```***
 
 ## ***MAGIC_TRICK***
 
@@ -84,7 +84,7 @@ p.sendlineafter('it\n', str(binary.get_section_by_name('.fini_array').header.sh_
 print(p.recvuntil('}').decode())
 ```
 
-FLAG : ***```dctf{1_L1k3_M4G1c}```***
+Flag : ***```dctf{1_L1k3_M4G1c}```***
 
 ## ***BABY_BOF***
 
@@ -128,6 +128,8 @@ p.sendlineafter('me\n',payload)
 p.recvuntil('work\n')
 p.interactive()
 ```
+Flag : ***```dctf{D0_y0U_H4v3_A_T3mpl4t3_f0R_tH3s3}```***
+
 https://github.com/datajerk/ctf-write-ups/blob/master/INDEX.md
 
 similiar : https://github.com/datajerk/ctf-write-ups/tree/master/darkctf2020/roprop 
@@ -165,7 +167,7 @@ By running the ```nc dctf-chall-bell.westeurope.azurecontainer.io 5311```
 
 By giving the number that came in when we enter the port in the above program we get some values if we enter those values in the port we get the flag.
 
-FLAG : ***```dctf{f1rst_step_t0wards_b3ll_l4bs}```***
+Flag : ***```dctf{f1rst_step_t0wards_b3ll_l4bs}```***
 
 ## ***JUST IN TIME***
 
@@ -195,7 +197,7 @@ free(0x5631a2b6e2a0)                             = &lt;void&gt;
 +++ exited (status 0) +++
 ```
 
-FLAG : ***``dctf{df77dbe0c407dd4a188e12013ccb009f}``***
+Flag : ***``dctf{df77dbe0c407dd4a188e12013ccb009f}``***
 
 ## ***TINY INTERPRETER***
 
@@ -203,7 +205,7 @@ We are given to files one interprter file and bin file.
 
 If we run **``./interpreter``** bin we get the flag.
 
-FLAG : ***``dctf{Interpreter_written_in_C_is_a_great_idea}``***
+Flag : ***``dctf{Interpreter_written_in_C_is_a_great_idea}``***
 
 # ***CRYPTO***
 
@@ -223,7 +225,7 @@ for i in range(42):
 print(real_cipher)
 ```
 
-FLAG : ***```dctf{Th1s_l00ks_4_lot_sm4ll3r_th4n_1t_d1d}```***
+Flag : ***```dctf{Th1s_l00ks_4_lot_sm4ll3r_th4n_1t_d1d}```***
 
 ## ***STRONG PASSWORD***
 
@@ -245,7 +247,7 @@ We are given a flag.txt
 
 We can get the flag by decoding as ceaser cipher 
 
-FLAG : ***```dcTf{Th3_d13_h4S_b33N_c4ST}```***
+Flag : ***```dcTf{Th3_d13_h4S_b33N_c4ST}```***
 
 ## ***FORGOTTEN SECRET***
 
@@ -294,7 +296,7 @@ s=$(cat cipher.txt | cut -b "$i" | tr -d '\n')
 done
 ```
 
-FLAG : ***```DCTFTURINGWOULDBEPROUD```***
+Flag : ***```DCTFTURINGWOULDBEPROUD```***
 
 ## ***JUST TAKE YOUR TIME***
 
@@ -345,6 +347,7 @@ s.send(bytearray(cleartext + "\n", 'utf-8'))
 output3 = str(s.recv(1024).decode("utf-8"))
 print("debug remote output:\n" + output3 + "\n")
 ```
+Flag : ***```dctf{1t_0n1y_t0Ok_2_d4y5...}```***
 
 ## ***A SIMPLE SP BOX***
 
@@ -396,6 +399,7 @@ success(flag)
 p.sendline(flag)
 p.interactive()
 ```
+Flag : ***```dctf{S0_y0u_f0und_th3_cycl3s_in_th3_s_b0x}```***
 
 # ***MISC***
 
@@ -413,4 +417,54 @@ Here is a screenshot of conversion of the characters to readable ASCII format.
 
 By decoding each character we get the flag 
 
-FLAG : ***```DCTF{MASTERCODEBREAKER}```***
+Flag : ***```DCTF{MASTERCODEBREAKER}```***
+
+## ***DRAGON***
+
+This flag was hidden inside the layers of the image. We used a tool called Stegsolve to extract the flag.
+
+java -jar stegsolve.jar
+
+The file was imported in the tool as follows:
+
+![image](https://user-images.githubusercontent.com/73250884/118488616-8bb75980-b739-11eb-8914-e56427853653.png)
+
+The different views were browsed by clicking in the arrow buttons and the flag was found in “Blue plane 1”
+
+![image](https://user-images.githubusercontent.com/73250884/118488690-9f62c000-b739-11eb-82b9-61cf94d56e19.png)
+
+Flag : ***```dctf{N0w_Y0u_s3e_m3}```***
+
+## ***LEAK SPIN***
+
+The description says the flag was online somewhere! had to be in some social account. Finally found it on their github page.
+
+![image](https://user-images.githubusercontent.com/73250884/118489871-f4530600-b73a-11eb-941e-9d8ef7f5c37c.png)
+
+Flag : ***```dctf{I_L1k3_L1evaAn_P0lkk4}```***
+
+## ***DON'T LET IT RUN***
+
+We are given a pdf file if we put that file in cyberchef and do hex decoding we get the flag.
+
+![image](https://user-images.githubusercontent.com/73250884/118490511-a38fdd00-b73b-11eb-81a7-0c5235ec5526.png)
+
+Flag : ***```dctf{pdf_1nj3ct3d}```***
+
+## ***HIDDEN MESSAGE***
+
+We are given an image. using zsteg we can get the flag.
+
+```zsteg fri.png```
+
+![image](https://user-images.githubusercontent.com/73250884/118491474-aa6b1f80-b73c-11eb-803a-2f611545503d.png)
+
+Flag : ***```dctf{sTeg0noGr4Phy_101}```***
+
+## ***SHOW US YOUR ID***
+
+We are given a pdf file if we put that file in cyberchef and do hex decoding we get the flag.
+
+![image](https://user-images.githubusercontent.com/73250884/118491967-26fdfe00-b73d-11eb-8535-f2646a9fc412.png)
+
+Flag : ***```dctf{3b0ba4}```***
