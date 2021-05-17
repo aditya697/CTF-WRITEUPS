@@ -2,7 +2,7 @@
 
 This will give the flag.
 
-***```ltrace -s 90 ./justintime````***
+***```ltrace -s 90 ./justintime```***
 ```
 malloc(8)                                        = 0x5631a2b6e2a0
 malloc(8)                                        = 0x5631a2b6e2c0
