@@ -37,8 +37,6 @@ p.interactive()
 ```
 Flag : ***```dctf{D0_y0U_H4v3_A_T3mpl4t3_f0R_tH3s3}```***
 
-https://github.com/datajerk/ctf-write-ups/blob/master/INDEX.md
-
 similiar : https://github.com/datajerk/ctf-write-ups/tree/master/darkctf2020/roprop 
            
    https://github.com/datajerk/ctf-write-ups/tree/master/downunderctf2020/return_to_what
