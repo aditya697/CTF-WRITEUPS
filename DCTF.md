@@ -126,6 +126,6 @@ p.sendlineafter('me\n',payload)
 p.recvuntil('work\n')
 p.interactive()
 ```
-[https://github.com/datajerk/ctf-write-ups/blob/master/INDEX.md](#For-more-like-this)
+https://github.com/datajerk/ctf-write-ups/blob/master/INDEX.md
 
-similiar : [darkctf](#https://github.com/datajerk/ctf-write-ups/tree/master/darkctf2020/roprop) [downunderctf](#https://github.com/datajerk/ctf-write-ups/tree/master/downunderctf2020/return_to_what)
+similiar : https://github.com/datajerk/ctf-write-ups/tree/master/darkctf2020/roprop https://github.com/datajerk/ctf-write-ups/tree/master/downunderctf2020/return_to_what
