@@ -11,4 +11,4 @@ And now I opened the Animation plane to see the exact animation where we get the
 
 And I started pressing them manually and noted the flag.
 
- Flag : ***```DCTF {PPT_1SNT_V3RY_S3CUR3_1S_1T}```***
+ Flag : ***```dctf{PPT_1SNT_V3RY_S3CUR3_1S_1T}```***
