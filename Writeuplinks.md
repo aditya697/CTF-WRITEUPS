@@ -1,3 +1,5 @@
+LEARN PWN - https://github.com/fr334aks/100-days-of-Hacking/tree/main/1.Resources/BinExpRev
+
 CRYPTO , REV - https://wrecktheline.com/writeups/
 
 Good for PWN - https://github.com/datajerk/ctf-write-ups/blob/master/INDEX.md
@@ -21,3 +23,5 @@ PWN - https://github.com/csivitu/CTF-Write-ups
 USERNAMES - https://github.com/sherlock-project/sherlock
 
 MISC , CRYPTO - https://github.com/thehackerscrew/dCTF
+
+WEB - https://github.com/k0imet/CTFs/tree/main/CTF-BIBLE/Web
