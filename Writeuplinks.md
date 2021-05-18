@@ -25,3 +25,5 @@ USERNAMES - https://github.com/sherlock-project/sherlock
 MISC , CRYPTO - https://github.com/thehackerscrew/dCTF
 
 WEB - https://github.com/k0imet/CTFs/tree/main/CTF-BIBLE/Web
+
+MISC - https://isopach.dev/
