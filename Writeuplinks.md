@@ -27,3 +27,5 @@ MISC , CRYPTO - https://github.com/thehackerscrew/dCTF
 WEB - https://github.com/k0imet/CTFs/tree/main/CTF-BIBLE/Web
 
 MISC - https://isopach.dev/
+
+DARKAMRY - https://github.com/DarkArmy-ctf/ctf-writeups
