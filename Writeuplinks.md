@@ -19,3 +19,5 @@ MISC - https://nikolabura.github.io/blog/post/umdctf-2021-writeups/
 PWN - https://github.com/csivitu/CTF-Write-ups
 
 USERNAMES - https://github.com/sherlock-project/sherlock
+
+MISC , CRYPTO - https://github.com/thehackerscrew/dCTF
