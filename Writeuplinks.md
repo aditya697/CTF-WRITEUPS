@@ -29,3 +29,5 @@ WEB - https://github.com/k0imet/CTFs/tree/main/CTF-BIBLE/Web
 MISC - https://isopach.dev/
 
 DARKAMRY - https://github.com/DarkArmy-ctf/ctf-writeups
+
+PWN - https://www.youtube.com/playlist?list=PLiCcguURxSpbD9M0ha-Mvs-vLYt-VKlWt
