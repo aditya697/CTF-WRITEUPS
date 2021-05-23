@@ -33,3 +33,5 @@ DARKAMRY - https://github.com/DarkArmy-ctf/ctf-writeups
 PWN - https://www.youtube.com/playlist?list=PLiCcguURxSpbD9M0ha-Mvs-vLYt-VKlWt
 
 PWN - https://github.com/LMS57/ctf_writeups
+
+MISC - https://github.com/bootplug/writeups
