@@ -34,6 +34,8 @@ PWN - https://www.youtube.com/playlist?list=PLiCcguURxSpbD9M0ha-Mvs-vLYt-VKlWt
 
 PWN - https://github.com/LMS57/ctf_writeups
 
+ROOTME - https://github.com/RomaniukVadim/wargaming-challenges/tree/master/RootMe
+
 BOOTPLUG - https://github.com/bootplug/writeups
 
 FORENSICS - https://github.com/stuxnet999
