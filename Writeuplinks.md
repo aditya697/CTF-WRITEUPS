@@ -22,7 +22,7 @@ PWN - https://github.com/csivitu/CTF-Write-ups
 
 USERNAMES - https://github.com/sherlock-project/sherlock
 
-MISC , CRYPTO - https://github.com/thehackerscrew/dCTF
+THEHACKERSCREW - https://github.com/thehackerscrew/dCTF
 
 WEB - https://github.com/k0imet/CTFs/tree/main/CTF-BIBLE/Web
 
@@ -34,4 +34,8 @@ PWN - https://www.youtube.com/playlist?list=PLiCcguURxSpbD9M0ha-Mvs-vLYt-VKlWt
 
 PWN - https://github.com/LMS57/ctf_writeups
 
-MISC - https://github.com/bootplug/writeups
+BOOTPLUG - https://github.com/bootplug/writeups
+
+FORENSICS - https://github.com/stuxnet999
+
+BI0S - https://github.com/teambi0s
