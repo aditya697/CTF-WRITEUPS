@@ -36,6 +36,8 @@ PWN - https://github.com/LMS57/ctf_writeups
 
 ROOTME - https://github.com/RomaniukVadim/wargaming-challenges/tree/master/RootMe
 
+ROOTME(CRYPTO) - https://github.com/rajoul/root-me
+
 BOOTPLUG - https://github.com/bootplug/writeups
 
 FORENSICS - https://github.com/stuxnet999
