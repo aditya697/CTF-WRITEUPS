@@ -43,3 +43,5 @@ BOOTPLUG - https://github.com/bootplug/writeups
 FORENSICS - https://github.com/stuxnet999
 
 BI0S - https://github.com/teambi0s
+
+Freedom - https://github.com/Super-Yojan/FreedomCTFWriteups
