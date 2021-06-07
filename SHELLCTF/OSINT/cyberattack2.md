@@ -20,6 +20,6 @@ https://realantwohnette.wordpress.com is a wordpress page with some articles.
 In these articles we find a hint to guess the origin of the attacker.
 "Cancel Culture, the Tumor in Twitter" has a foreign word in it:
 
-![hint](images/hint.PNG)
+![hint](https://user-images.githubusercontent.com/73250884/120971495-4f9c7500-c78a-11eb-8c04-3ff142c064c2.png)
 
 That looks like a french spelling, so it can lead us to the origin of the author: SHELL{France}
