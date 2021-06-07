@@ -1,4 +1,4 @@
-# anonym
+# ANONYM
 ### Anonymous are back and they really hate robots.
 
 The description already hints us to the robot.txt so let's have a look at it:
