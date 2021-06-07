@@ -45,7 +45,9 @@ http://3.142.122.1:9334/admin
 This is some kind of API but we are not authorized. It seems like we need a token, we already have a secret_key which is used to sign tokens so this will propably be our attack vector.
 We don't have any cookies/tokens yet so let's check our /login page.
 
-Sending in the form of the /login page responses with a token in the header:
+For getting the intial token 
+
+```curl -s -i "http://3.142.122.1:9334/login" -d "username=din_djarin11" |grep token```
 
 ![header_token](https://user-images.githubusercontent.com/73250884/120975811-495cc780-c78f-11eb-8846-a9fcd65a5263.png)
 
@@ -56,7 +58,7 @@ Let's decrypt it using https://jwt.io
 
 Intiallly it is like this
 
-![jwt.io.png](https://user-images.githubusercontent.com/73250884/120976430-f6cfdb00-c78f-11eb-9fa9-19e503c7b63f.png)
+![jwt.io.png](https://user-images.githubusercontent.com/73250884/120976911-680f8e00-c790-11eb-8b3e-8f58508ca57a.png)
 
 Change the admin to gehr and use the secret code we got.
 
