@@ -72,13 +72,12 @@ Let's send that token to /admin as our authorization header:
 
 ```
 curl http://3.142.122.1:9334/admin -H "Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InF2YV9xd25ldmExMSIsInBhc3N3b3JkIjoiaGFxcnN2YXJxIiwiYWRtaW4iOiJnZWhyIiwiaWF0IjoxNjIzMDUwNTI2fQ.lzzivSQHWUoPxBy4VWv0CdosfDJRZDiOqjR7T36eerQ"
-Hey din_djarin11! Here's your flag: FURYY{G0x3af_q0_z4gg3e_4r91ns4506s384q460s0s0p6r9r5sr4n}
 ```
 
 ![image](https://user-images.githubusercontent.com/73250884/120977485-000d7780-c791-11eb-8f69-08841c575b3c.png)
 
 ```
-FURYY{G0x3af_q0_z4gg3e_4r91ns4506s384q460s0s0p6r9r5sr4n}
+Hey din_djarin11! Here's your flag: FURYY{G0x3af_q0_z4gg3e_4r91ns4506s384q460s0s0p6r9r5sr4n}
 ```
 By doing the rot 13 using cyberchef we get the flag https://gchq.github.io/CyberChef/
 
