@@ -15,7 +15,7 @@ For code examples check https://realantwohnette.wordpress.com
 ```
 https://realantwohnette.wordpress.com is a wordpress page with some articles. At the bottom of the page we find a link to a twitter account:
 
-![twitter](images/twitter_link.PNG)
+![twitter](https://user-images.githubusercontent.com/73250884/120971033-d1d86980-c789-11eb-9ca0-cbf9e0e91049.png)
 
 So we got three names: <br>
 
