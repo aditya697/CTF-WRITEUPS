@@ -2,3 +2,8 @@
 
 # DCTF
 
+# SHELLCTF
+
+# wtfCTF
+
+# VishwaCTF
