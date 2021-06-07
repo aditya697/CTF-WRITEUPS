@@ -19,6 +19,6 @@ We can see a compare which is highlighted.
 
 So here the value is being compared to 0x913 i.e 2323 in decimal.
 
-![image](https://user-images.githubusercontent.com/73250884/120994751-6a7ae380-c7a2-11eb-9818-0f1f37ddbe2b.png)
+![image](https://user-images.githubusercontent.com/73250884/120994946-9ac28200-c7a2-11eb-939f-91962d52299f.png)
 
 Flag: ``SHELL{bas1c_r3v}``
