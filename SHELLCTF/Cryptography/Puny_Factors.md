@@ -1,10 +1,9 @@
 # Puny Factors
 
 We are given Public key and C.
-
+```
 Publickey =
 
-```
 -----BEGIN PUBLIC KEY-----
 MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAtopWZG+pBi0RlOBViqSt
 6Vf5Ha97r43N+66eI2chnUN9FkL5hearaN431LP3/XX8QJ4dZE6toFRAfePh3XRi
