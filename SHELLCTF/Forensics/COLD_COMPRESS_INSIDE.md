@@ -1,6 +1,6 @@
 # Cold Compress Inside
 
-We are given [this image](COLD_COMPRESS.jpeg).
+We are given a jpeg file.
 Running `file` on it quickly tells us it's a PNG even though it has .jpeg extension.
 
 As the name suggests already we assume that there is another file hidden inside of it. So we run foremost on it:
