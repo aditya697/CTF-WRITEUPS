@@ -60,7 +60,7 @@ Intiallly it is like this
 
 ![jwt.io.png](https://user-images.githubusercontent.com/73250884/120976911-680f8e00-c790-11eb-8b3e-8f58508ca57a.png)
 
-Change the admin to gehr and use the secret code we got.
+Change the admin to ``gehr`` and use the secret code we got.
 
 After changing we get out new token
 
