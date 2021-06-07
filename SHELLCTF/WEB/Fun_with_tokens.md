@@ -45,33 +45,24 @@ http://3.142.122.1:9334/admin
 This is some kind of API but we are not authorized. It seems like we need a token, we already have a secret_key which is used to sign tokens so this will propably be our attack vector.
 We don't have any cookies/tokens yet so let's check our /login page.
 
-Sending `test:test` in the form of the /login page responses with a token in the header:
-![header_token](https://user-images.githubusercontent.com/73250884/120973882-216c6480-c78d-11eb-88ae-c2d7f572af45.png)
+Sending in the form of the /login page responses with a token in the header:
+
+![header_token](https://user-images.githubusercontent.com/73250884/120975811-495cc780-c78f-11eb-8846-a9fcd65a5263.png)
 
 ```
-eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImdyZmciLCJwYXNzd29yZCI6ImdyZmciLCJhZG1pbiI6InNueWZyIiwiaWF0IjoxNjIyOTc3MjI4fQ.nMCBVHmSiRpfV_nMnDqlTFLemUiIHePimxCP8UqPU9c
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InF2YV9xd25ldmExMSIsInBhc3N3b3JkIjoiaGFxcnN2YXJxIiwiYWRtaW4iOiJzbnlmciIsImlhdCI6MTYyMzA1MDUyNn0.HcaTRFCnecRpusoNFTupk2ZiH4tCMNwVCrI4tMn2-4Q
 ```
 Let's decrypt it using https://jwt.io
-![jwt_io.png](https://user-images.githubusercontent.com/73250884/120973938-32b57100-c78d-11eb-929b-6210d9574f54.png)
 
-We can see username and password, however they are not what we sent.. `test` got translated to `grfg`. Let's send the alphabet to get the subsitution alphabet:
+Intiallly it is like this
 
-```
-abcdefghijklmnopqrstuvwxyz
-nopqrstuvwxyzabcdefghijklm
-```
+![jwt.io.png](https://user-images.githubusercontent.com/73250884/120976430-f6cfdb00-c78f-11eb-9fa9-19e503c7b63f.png)
 
-We are now able to translate our username and password propably, also we notice that it says `false` inside the admin parameter.
-Let's craft our new token using everything we have so far:
-```
-username: qva_qwneva11 (din_djarin11 translated using our subsitution alphabet)
-password: empty we don't have one yet
-admin: gehr (translation of true)
-signature key: G00D_s0ld13rs_k33p_s3cret5
-```
+Change the admin to gehr and use the secret code we got.
 
-It should look like this:
-![crafted_jwt](https://user-images.githubusercontent.com/73250884/120974064-52e53000-c78d-11eb-8acf-6543cabf71c0.png)
+After changing we get out new token
+
+![jwt_io.png](https://user-images.githubusercontent.com/73250884/120976121-a8bad780-c78f-11eb-919a-b37128069345.png)
 
 Let's send that token to /admin as our authorization header:
 ![send_token](https://user-images.githubusercontent.com/73250884/120974145-67c1c380-c78d-11eb-9df5-1f233fdf92e2.png)
