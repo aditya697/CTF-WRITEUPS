@@ -10,4 +10,4 @@ So, we can simply construct a table for all possible 256 bytes to see what bytes
 We can do this by encrypting each of 00, 01, 02, ..., ff. 
 We can then decrypt the encrypted flag by reversing the mapping.
 
-The flag is mono substitutions arent that creative
+The flag is ``mono substitutions arent that creative``
