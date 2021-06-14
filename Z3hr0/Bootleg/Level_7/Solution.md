@@ -1,0 +1,7 @@
+# LEVEL 7
+
+Same as the previous level, there is a delay before we receive the encrypted flag, and the encrypted flag differs each time. Seems like there is prime generation going on in the background again. Once again, I tried encrypting 00, 01, and 02 again. The former resulted in 0 and 1 again like before, but the latter resulted in a rather large number. It seems like it's still a power though, so we can take the log base 2 of the encryption of 2 to get that power. Trying this on multiple connections showed that this power varied, seemingly between around 60 and 150. In any case, it's not huge, so sage's nth_root can handle it fine.
+
+Once again, the task is then to find the prime which is the modulo. I tried using the same semi-lazy approach as before(in retrospect, it definitely would have been simpler to just use the GCD method), which failed since multiplying a number by 256 and raising that to a high power would, as expected, result in a huge number, so the difference message^3 - result became very difficult to factor. I opted to just increase my messages's values by a small value at a time(multiplying by 1.1, converting to int, then to hexstring) from a base value of 256 so that the encryption result would still be small. It's not pretty, but it worked. The rest is the same as the previous level.
+
+The flag is ``zh3r0{17_a1n7_much_bu7_1_4m_s0m37h1ng_0f_4_cryp74n4ly57_my53lf}``
