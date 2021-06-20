@@ -26,7 +26,8 @@ for i in range(n):
 result = {}
 print(get_waste(l,w,lst))
 
-#AUTOMATED CODE
+#AUTOMATED CODE FOR THE ABOVE CODE
+
 from pwn import *
 
 p = remote("lunch-with-the-cia.hsc.tf",1337)
