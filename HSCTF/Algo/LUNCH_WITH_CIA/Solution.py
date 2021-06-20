@@ -60,5 +60,4 @@ for i in range(10):
     print(res)
     p.sendline(str(res))
     print(p.recvline())
-while True:
-    print(p.recvline())
+print(p.recvline())
