@@ -22,6 +22,7 @@ If you noticed, in the watermark URL the ID is missing two characters from the s
 
 ``
 Channel   : https://www.youtube.com/channel/UCqZq81jZcdjAHQJ3UtAbdaA
+
 Watermark : https://i.ytimg.com/an/B6PV0cvJpzlcXRG7nz6PpQ/featured_channel.jpg
 ``
 
