@@ -2,8 +2,8 @@
 
 We are given 2 images.
 
-![picture2](https://user-images.githubusercontent.com/73250884/122715520-9f009c00-d286-11eb-8044-d0023ff33cff.png)
 ![picture1](https://user-images.githubusercontent.com/73250884/122715526-a0ca5f80-d286-11eb-8022-defe538e090f.png)
+![picture2](https://user-images.githubusercontent.com/73250884/122715520-9f009c00-d286-11eb-8044-d0023ff33cff.png)
 
 By doing image search we can find the location and approximate the co-ordinates.
 
