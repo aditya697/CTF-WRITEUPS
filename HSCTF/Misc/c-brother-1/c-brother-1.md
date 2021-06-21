@@ -14,9 +14,9 @@ There are no vedios with watermark in the channel.
 
 We can get a vedio which has watermark and get the URL through which watermark is being loaded.
 
-``
+```
 https://i.ytimg.com/an/B6PV0cvJpzlcXRG7nz6PpQ/featured_channel.jpg
-``
+```
 
 If you noticed, in the watermark URL the ID is missing two characters from the start i.e. UC
 
@@ -28,9 +28,9 @@ Watermark : https://i.ytimg.com/an/B6PV0cvJpzlcXRG7nz6PpQ/featured_channel.jpg
 
 Using the channel link of `BC01010` I changed the link of the watermark.
 
-``
+```
 https://i.ytimg.com/an/qZq81jZcdjAHQJ3UtAbdaA/featured_channel.jpg
-``
+```
 
 This image is our flag.
 
