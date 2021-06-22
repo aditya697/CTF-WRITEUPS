@@ -1,5 +1,11 @@
-```on analysing the sage file i understood that c in a alzebrix equation of degree 4 and i even know what x and y is from the output result so i thoougth of substituting back the coffecients into the equations and find the constants by gauss jordon method
-the link of my calculation: https://matrixcalc.org/en/slu.html#solve-using-Gaussian-elimination%28%7B%7B10404,2704,5304,102,52,1,196041229330569267220106%7D,%7B17424,21316,19272,132,146,1,410001940353094891409244%7D,%7B324,57600,4320,18,240,1,103837469369268721370678%7D,%7B249%2a249,159%2a159,249%2a159,249,159,1,1219095771628413625551254%7D,%7B138%2a138,178%2a178,138%2a178,138,178,1,479023074104679528693764%7D,%7B53%2a53,109%2a109,53%2a109,53,109,1,93693969877021049165894%7D%7D%29
+# cyanocitta-cristata-cyanotephra
+
+on analysing the sage file i understood that c in a alzebrix equation of degree 4 and i even know what x and y is from the output result so i thoougth of substituting back the coffecients into the equations and find the constants by gauss jordon method
+the link of my calculation: 
+```
+https://matrixcalc.org/en/slu.html#solve-using-Gaussian-elimination%28%7B%7B10404,2704,5304,102,52,1,196041229330569267220106%7D,%7B17424,21316,19272,132,146,1,410001940353094891409244%7D,%7B324,57600,4320,18,240,1,103837469369268721370678%7D,%7B249%2a249,159%2a159,249%2a159,249,159,1,1219095771628413625551254%7D,%7B138%2a138,178%2a178,138%2a178,138,178,1,479023074104679528693764%7D,%7B53%2a53,109%2a109,53%2a109,53,109,1,93693969877021049165894%7D%7D%29
+```
+
 from here i got the values as
 x_1=15323988390216276549
 x_2=1211184093130083857
@@ -7,7 +13,9 @@ x_3=5875327950550733875
 x_4=13889881931964042512
 x_5=14473158623602872631
 x_6=3300675726605068946
+
 so to solve it I wrote a py code:
+
 ```py
 import codecs
 a=966671014274
@@ -17,4 +25,5 @@ m=138520836146540268021005113774482842832435744464460599504393057167960546177055
 d=c^m
 print(codecs.decode(('%x'%d),'hex_codec'))
 ```
+
 flag: `flag{:monkaSTEER::monkaSTEER::monkaSTEER::monkaSTEER::monkaSTEER::monkaSTEER::monkaSTEER::monkaSTEER:}`
