@@ -34,4 +34,4 @@ If we note down all the letters being printed it will form the flag.
 
 Didn't do much reversing but got the flag 😅
 
-Flag:- ``ictf{th3_l3s5_th0ugh+_+he_b3teR}``
+Flag:- ``ictf{0n3_ch@r@ct3r_0f_d1f3r3nce}``
