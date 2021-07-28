@@ -4,6 +4,8 @@ We are given `.txt` which has few values.
 
 Looking at those values and challenge name we will know it is `RSA`.
 
+It is a similar challange to mini rsa in picoCTF.
+
 By using the following the script we can get the flag.
 
 ```py
