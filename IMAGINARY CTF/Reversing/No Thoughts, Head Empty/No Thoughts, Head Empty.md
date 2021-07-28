@@ -32,6 +32,6 @@ like 1st letter 1 time , 2nd letter 2 times , 3rd letter 4 times , 4th letter 8 
 
 If we note down all the letters being printed it will form the flag.
 
-Didn't much reversing but got the flag 😅
+Didn't do much reversing but got the flag 😅
 
 Flag:- ``ictf{th3_l3s5_th0ugh+_+he_b3teR}``
